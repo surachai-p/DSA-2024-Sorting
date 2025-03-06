@@ -111,9 +111,28 @@ bubble_sort_with_steps(test_data.copy())
    ### บันทึกผลแบบทดสอบ
 บันทึกโค้ดแบบทดสอบ
 ```python
-บันทึกโค้ด แบบทดสอบ
+def optimized_bubble_sort(arr):
+    n = len(arr)
+    for i in range(n):
+        swapped = False
+        for j in range(0, n - i - 1):
+            if arr[j] > arr[j + 1]:
+                arr[j], arr[j + 1] = arr[j + 1], arr[j]
+                swapped = True
+        
+        # ถ้าไม่มีการสลับในรอบนี้ แสดงว่าข้อมูลเรียงลำดับแล้ว
+        if not swapped:
+            break
+    return arr
+
+# ทดสอบฟังก์ชัน
+test_data = [64, 34, 25, 12, 22, 11, 45, 24, 6, 90]
+sorted_data = optimized_bubble_sort(test_data.copy())
+print("Sorted array:", sorted_data)
+
 ```
 บันทึกรูปผลแบบทดสอบ
+![alt text](image-2.png)
 ![บันทึกรูปผลการทดลอง](image-paht/image.png)
 
 1. ทดสอบกับชุดข้อมูลที่เรียงลำดับแล้ว เช่น `[1, 2, 3, 4, 5,6,7,8,9,10]` และวัดประสิทธิภาพ
@@ -121,7 +140,10 @@ bubble_sort_with_steps(test_data.copy())
 ```html
  อธิบายผลที่นี่
 ```
+    ใช้เวลาในการรันเร็วกว่าแบบที่ไม่ได้เรียงลำดับ Bubble Sort จะจบการทำงานได้เร็วมาก
+เพราะตัวแปร swapped จะไม่มีการเปลี่ยนแปลงเป็น True และอัลกอริทึมจะ หยุดทำงานทันทีในรอบแรก
 บันทึกรูปผลแบบทดสอบ
+![alt text](image-3.png)
 ![บันทึกรูปผลการทดลอง](image-paht/image.png)
 
 

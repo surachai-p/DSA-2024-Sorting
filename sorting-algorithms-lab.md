@@ -102,7 +102,6 @@ test_data = [64, 34, 25, 12, 22, 11, 45, 24, 6, 90]
 bubble_sort_with_steps(test_data.copy())
 ```
 ### บันทึกผลการทดลอง
-บันทึกรูปผลการทดลอง
 
 ![image](https://github.com/user-attachments/assets/01e5b6ab-022b-4399-98f6-a39de6bdc5db)
 

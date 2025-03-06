@@ -103,7 +103,10 @@ bubble_sort_with_steps(test_data.copy())
 ```
 ### บันทึกผลการทดลอง
 บันทึกรูปผลการทดลอง
-![บันทึกรูปผลการทดลอง](image-paht/image.png)
+![image](https://github.com/user-attachments/assets/fd77b87d-67d3-4f36-8a52-7197fa0169d2)
+![image](https://github.com/user-attachments/assets/dca20d89-d456-4d87-b8da-1a7861c767aa)
+
+
 
 ### แบบทดสอบ
 1. ปรับปรุงโค้ด ในฟังก์ชัน bubble_sort(arr)  ให้มีประสิทธิภาพมากขึ้นโดยเพิ่มการตรวจสอบว่ามีการสลับตำแหน่งในแต่ละรอบหรือไม่ ถ้าไม่มีการสลับแสดงว่าข้อมูลเรียงลำดับแล้ว สามารถหยุดการทำงานได้ทันที

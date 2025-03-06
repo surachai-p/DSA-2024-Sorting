@@ -192,7 +192,6 @@ test_data = [64, 34, 25, 12, 22, 11, 45, 24, 6, 90]
 insertion_sort_with_steps(test_data.copy())
 ```
 ### บันทึกผลการทดลอง
-บันทึกรูปผลการทดลอง
 
 ![image](https://github.com/user-attachments/assets/3a4a70de-98db-43b6-8d1a-bccd24100619)
 

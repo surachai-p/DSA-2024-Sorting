@@ -111,18 +111,56 @@ bubble_sort_with_steps(test_data.copy())
    ### บันทึกผลแบบทดสอบ
 บันทึกโค้ดแบบทดสอบ
 ```python
-บันทึกโค้ด แบบทดสอบ
+def optimized_bubble_sort(arr):
+    n = len(arr)
+    
+    for i in range(n):
+        swapped = False
+        last_swap_index = 0  # ตำแหน่งที่เกิดการสลับล่าสุด
+        print(f"รอบที่ {i+1}:")
+        
+        for j in range(0, n - i - 1):
+            print(f"  เปรียบเทียบ {arr[j]} กับ {arr[j+1]}", end=" -> ")
+            
+            if arr[j] > arr[j+1]:
+                arr[j], arr[j+1] = arr[j+1], arr[j]
+                swapped = True
+                last_swap_index = j  # บันทึกตำแหน่งการสลับ
+                print(f"สลับ: {arr}")
+            else:
+                print(f"ไม่สลับ: {arr}")
+        
+        if not swapped:
+            print(f"  ไม่มีการสลับในรอบนี้ - ข้อมูลเรียงลำดับแล้ว")
+            break  # หยุดทำงานถ้าข้อมูลเรียงลำดับแล้ว
+        
+        # ลดขนาดขอบเขตของลูป
+        n = last_swap_index + 1
+
+    return arr
+
+# ทดสอบการทำงาน
+test_data = [64, 34, 25, 12, 22, 11, 45, 24, 6, 90]
+optimized_bubble_sort(test_data.copy())
+
 ```
 บันทึกรูปผลแบบทดสอบ
-![บันทึกรูปผลการทดลอง](image-paht/image.png)
+
+![image](https://github.com/user-attachments/assets/2219eb26-0798-4a9d-9568-88ad3c83690d)
+
 
 1. ทดสอบกับชุดข้อมูลที่เรียงลำดับแล้ว เช่น `[1, 2, 3, 4, 5,6,7,8,9,10]` และวัดประสิทธิภาพ
 ### บันทึกผลแบบทดสอบ
 ```html
- อธิบายผลที่นี่
+ เพิ่มตัวแปร swapped เพื่อตรวจสอบว่ามีการสลับเกิดขึ้นหรือไม่
+หยุดการทำงานทันที หากไม่มีการสลับในรอบใดรอบหนึ่ง
+[1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+ ถ้าข้อมูล เรียงอยู่แล้ว  จะทำงานเพียง รอบเดียว แล้วหยุดเลย
+
+
 ```
 บันทึกรูปผลแบบทดสอบ
-![บันทึกรูปผลการทดลอง](image-paht/image.png)
+![image](https://github.com/user-attachments/assets/4aa2a1f9-8c24-4d49-bf55-cf021b42321d)
 
 
 ## การทดลองที่ 2: Insertion Sort

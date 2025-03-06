@@ -80,7 +80,7 @@ def compare_sort():
     counting_times = []
 
     for size in sizes:
-        data = [random.randint(0, 999) for _ in range(size)]
+        data = [random.randint(0, 99999) for _ in range(size)]
         
         # วัดเวลา Shell Sort
         start_time = time.time()
@@ -116,7 +116,7 @@ def compare_sort():
     plt.plot(sizes, radix_times, marker='*', label='Radix Sort')
     plt.plot(sizes, counting_times, marker='o', label='Counting Sort')
 
-    plt.title('Performance comparison of sorting (Data 0-999). Created By [Phum Akrthum]')
+    plt.title('Performance comparison of sorting (Data 0-99999). Created By [Phum Akrthum]')
     plt.xlabel('Input Size')
     plt.ylabel('Time (Milliseconds)')
     plt.legend()

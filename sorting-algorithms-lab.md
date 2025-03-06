@@ -961,15 +961,14 @@ compare_sort()
 
    ผลการเปรียบเทียบ Bubble sort, Insertion sort, Selection sort
 
-![รูปผลการทดลอง](./imagepath/image.png)
-
+![alt text](picture/Figure_3.png)
 
 ผลการเปรียบเทียบ Selection sort, shell sort, quick sort
 
-![รูปผลการทดลอง](./imagepath/image.png)
+![alt text](picture/Figure_4.png)
 
     ผลการเปรียบเทียบ shell sort, quick sort, merge sort,radix sort, couting sort
-![รูปผลการทดลอง](./imagepath/image.png)
+![alt text](picture/Figure_5.png)
 
 
 

@@ -547,9 +547,9 @@ print("ข้อมูลหลังเรียง:", sorted_data)
 print(f"เวลาที่ใช้: {(end_time - start_time)*1000:.6f} มิลลิวินาที")
 ```
 ### บันทึกผลการทดลอง
-บันทึกรูปผลการทดลอง
 
-![บันทึกรูปผลการทดลอง](image-paht/image.png)
+![image](https://github.com/user-attachments/assets/2599ecb9-f2ff-4043-acfd-76fdf30208c7)
+
 
 3. เขียนฟังก์ชันที่แสดงขั้นตอนการทำงาน
 ```python

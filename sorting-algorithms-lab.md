@@ -1019,7 +1019,7 @@ compare_sort()
 
 ผลการเปรียบเทียบ Selection sort, shell sort, quick sort
 
-![รูปผลการทดลอง](./imagepath/image.png)
+![image](https://github.com/user-attachments/assets/18b0d7a1-eec7-4ad3-b884-fa44a7314d7b)
 
 ผลการเปรียบเทียบ shell sort, quick sort, radix sort
 

@@ -1056,15 +1056,16 @@ compare_sort()
     sizes = [1000,5000, 10000, 20000, 40000,100000]
     ```
 
-    ผลการเปรียบเทียบ shell sort, quick sort, merge sort,radix sort, couting sort (กรณี Data 0-999)
+ผลการเปรียบเทียบ shell sort, quick sort, merge sort,radix sort, couting sort (กรณี Data 0-999)
 
 ![image](https://github.com/user-attachments/assets/09bcdf78-524f-4104-87d8-595a5add5ce6)
 
-    ผลการเปรียบเทียบ shell sort, quick sort, merge sort,radix sort, couting sort (กรณี Data 0-99999)
+ผลการเปรียบเทียบ shell sort, quick sort, merge sort,radix sort, couting sort (กรณี Data 0-99999)
 
-![รูปผลการทดลอง](./imagepath/image.png)
+![image](https://github.com/user-attachments/assets/95751016-459a-4c69-93e6-d109c6d37457)
 
-    ผลการเปรียบเทียบ shell sort, quick sort, merge sort,radix sort, couting sort (กรณี Data 0-999999)
+
+ผลการเปรียบเทียบ shell sort, quick sort, merge sort,radix sort, couting sort (กรณี Data 0-999999)
 
 ![รูปผลการทดลอง](./imagepath/image.png)
 

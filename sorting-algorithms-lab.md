@@ -234,8 +234,7 @@ insertion_sort_with_steps(test_data.copy())
 ```
 บันทึกรูปผลแบบทดสอบ
 
-![บันทึกรูปผลการทดลอง](image-paht/image.png)
-
+![image](https://github.com/user-attachments/assets/62207903-6eb6-4c22-98e7-7c12c5d79a42)
 
 ## การทดลองที่ 3: Selection Sort
 ### ทฤษฎี

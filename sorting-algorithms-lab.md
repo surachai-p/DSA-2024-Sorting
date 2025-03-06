@@ -235,7 +235,7 @@ insertion_sort_with_steps(test_data.copy())
 ### บันทึกผลการทดลอง
 บันทึกรูปผลการทดลอง
 
-![image](https://github.com/user-attachments/assets/fcde0d63-1e59-452c-b3b8-37e4c736dc0a)
+![Uploading image.png…]()
 
 ### แบบทดสอบ
 1. ปรับปรุงอัลกอริทึม Insertion Sort ให้รองรับการเรียงลำดับจากมากไปน้อย

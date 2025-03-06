@@ -600,11 +600,12 @@ shell_sort_with_steps(test_data.copy())
 1. เปรียบเทียบประสิทธิภาพกับ Insertion Sort ปกติเมื่อทดสอบกับชุดข้อมูลขนาดใหญ่
    ### บันทึกผลแบบทดสอบ
 ```html
- อธิบายผลที่นี่
+Shell Sort เร็วกว่า Insertion Sort มาก
 ```
 บันทึกรูปผลแบบทดสอบ
 
-![บันทึกรูปผลการทดลอง](image-paht/image.png)
+![image](https://github.com/user-attachments/assets/33f6ae63-a4e9-4052-8d7b-94171d3417c0)
+
 
 2. ทดสอบกับชุดข้อมูลที่เกือบเรียงลำดับแล้ว และวัดประสิทธิภาพ
 ### บันทึกผลแบบทดสอบ

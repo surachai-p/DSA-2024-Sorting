@@ -1143,7 +1143,9 @@ def counting_sort_by_digit(arr, exp):
     # คัดลอกผลลัพธ์กลับไปยังอาร์เรย์ต้นฉบับ
     for i in range(n):
         arr[i] = output[i]
-```
+
+![alt text](image.png)
+
 2. เขียนโค้ดเพื่อเปรียบเทียบการเรียงข้อมูลแต่ละแบบเมื่อใช้กับอินพุตแต่ละขนาดตามตัวอย่าง การเปรียบเทียบ Bubble sort, Insertion sort และ Selection sort
    ** ทำการติดตั้ง matplotlib ด้วยคำสั่ง  pip install matplotlib  หรือ pip3 install matplotlib **
 ```python
@@ -1205,38 +1207,38 @@ compare_sort()
 ### บันทึกรูปผลการทดลอง
 ผลการเปรียบเทียบ Bubble sort, Insertion sort, Selection sort
 
-![รูปผลการทดลอง](./imagepath/image.png)
+![รูปผลการทดลอง](./imagepath/image.png) ![alt text](image.png)
 
 
 ผลการเปรียบเทียบ Selection sort, shell sort, quick sort
 
-![รูปผลการทดลอง](./imagepath/image.png)
+![รูปผลการทดลอง](./imagepath/image.png) ![alt text](image.png)
 
 ผลการเปรียบเทียบ shell sort, quick sort, radix sort
 
-![รูปผลการทดลอง](./imagepath/image.png)
+![รูปผลการทดลอง](./imagepath/image.png) ![alt text](image.png)
 
 ผลการเปรียบเทียบ shell sort, quick sort, radix sort, couting sort
 
-![รูปผลการทดลอง](./imagepath/image.png)
+![รูปผลการทดลอง](./imagepath/image.png) ![alt text](image.png)
 
 3. ทดลองเปลี่ยนค่าช่วงข้อมูลให้มีขนาดกว้างขึ้น โดยเปลี่ยนค่า 999 เป็น 99999
-   ```python
+   ``python
            # สร้างชุดข้อมูลแบบสุ่มในช่วง 0-999
         data = [random.randint(0, 99999) for _ in range(size)]
    ```
 
    ผลการเปรียบเทียบ Bubble sort, Insertion sort, Selection sort
 
-![รูปผลการทดลอง](./imagepath/image.png)
+![รูปผลการทดลอง](./imagepath/image.png) ![alt text](image.png)
 
 
 ผลการเปรียบเทียบ Selection sort, shell sort, quick sort
 
-![รูปผลการทดลอง](./imagepath/image.png)
+![รูปผลการทดลอง](./imagepath/image.png) ![alt text](image.png)
 
     ผลการเปรียบเทียบ shell sort, quick sort, merge sort,radix sort, couting sort
-![รูปผลการทดลอง](./imagepath/image.png)
+![รูปผลการทดลอง](./imagepath/image.png) ![alt text](image.png)
 
 
 
@@ -1250,15 +1252,15 @@ compare_sort()
 
     ผลการเปรียบเทียบ shell sort, quick sort, merge sort,radix sort, couting sort (กรณี Data 0-999)
 
-![รูปผลการทดลอง](./imagepath/image.png)
+![รูปผลการทดลอง](./imagepath/image.png) ![alt text](image.png)
 
     ผลการเปรียบเทียบ shell sort, quick sort, merge sort,radix sort, couting sort (กรณี Data 0-99999)
 
-![รูปผลการทดลอง](./imagepath/image.png)
+![รูปผลการทดลอง](./imagepath/image.png) ![alt text](image.png)
 
     ผลการเปรียบเทียบ shell sort, quick sort, merge sort,radix sort, couting sort (กรณี Data 0-999999)
 
-![รูปผลการทดลอง](./imagepath/image.png)
+![รูปผลการทดลอง](./imagepath/image.png) ![alt text](image.png)
 
 
 ### สรุปผลการลอง เปรียบเทียบประสิทธิภาพของการเรียงข้อมูลแต่ละแบบ เมื่อใช้กับข้อมูลขนาดเล็ก ขนาดใหญ่ และข้อมูลที่มีความความแตกต่างของข้อมูลน้อย และความแตกต่างของข้อมูลมาก

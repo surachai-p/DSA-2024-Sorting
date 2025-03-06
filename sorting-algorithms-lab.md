@@ -743,12 +743,13 @@ def merge_with_steps(left, right, depth=0):
 # ทดสอบแสดงขั้นตอน
 test_data = [64, 34, 25, 12, 22, 11, 45, 24, 6, 90]
 merge_sort_with_steps(test_data.copy())
-
+```
 ### บันทึกผลการทดลอง
 บันทึกรูปผลการทดลอง
 
-![บันทึกรูปผลการทดลอง](image-paht/image.png)
-```
+![image](https://github.com/user-attachments/assets/dee2adfc-112c-4870-84a3-2e8fb257f777)
+
+![image](https://github.com/user-attachments/assets/b96d5fb9-0671-4825-b1f5-cfd305ba2c87)
 
 ### แบบทดสอบ
 

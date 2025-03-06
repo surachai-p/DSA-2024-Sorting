@@ -1058,7 +1058,7 @@ compare_sort()
 
     ผลการเปรียบเทียบ shell sort, quick sort, merge sort,radix sort, couting sort (กรณี Data 0-999)
 
-![รูปผลการทดลอง](./imagepath/image.png)
+![image](https://github.com/user-attachments/assets/09bcdf78-524f-4104-87d8-595a5add5ce6)
 
     ผลการเปรียบเทียบ shell sort, quick sort, merge sort,radix sort, couting sort (กรณี Data 0-99999)
 

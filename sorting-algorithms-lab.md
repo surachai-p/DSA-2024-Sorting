@@ -201,9 +201,31 @@ insertion_sort_with_steps(test_data.copy())
    ### บันทึกผลแบบทดสอบ
 บันทึกโค้ดและรูปผลแบบทดสอบ
 ```python
-บันทึกโค้ด แบบทดสอบ
+def insertion_sort_with_steps(arr):
+    print(f"เริ่มต้น: {arr}")
+    
+    for i in range(1, len(arr)):
+        key = arr[i]
+        j = i - 1
+        print(f"\nรอบที่ {i}: พิจารณา key = {key}")
+        
+        # เปลี่ยนเงื่อนไขจาก arr[j] > key เป็น arr[j] < key เพื่อเรียงจากมากไปน้อย
+        while j >= 0 and arr[j] < key:
+            arr[j+1] = arr[j]
+            j -= 1
+            print(f"  ย้าย {arr[j+2]} ไปทางขวา: {arr}")
+        
+        arr[j+1] = key
+        print(f"  แทรก {key} ลงในตำแหน่ง {j+1}: {arr}")
+    
+    return arr
+
+# ทดสอบแสดงขั้นตอน
+test_data = [64, 34, 25, 12, 22, 11, 45, 24, 6, 90]
+insertion_sort_with_steps(test_data.copy())
 ```
-![บันทึกรูปผลการทดลอง](image-paht/image.png)
+![image](https://github.com/user-attachments/assets/24fe2a1d-630e-421e-ae7b-c2bda4d9b761)
+
 
 2. ทดสอบกับชุดข้อมูลที่มีค่าซ้ำกัน เช่น `[3, 1, 4, 1, 5, 9, 2, 6, 5, 9]` และตรวจสอบผลลัพธ์
 ### บันทึกผลแบบทดสอบ

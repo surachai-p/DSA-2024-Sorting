@@ -951,7 +951,7 @@ compare_sort()
 ![alt text](picture/Sorting_Performance_Comparison.png)
 ผลการเปรียบเทียบ shell sort, quick sort, radix sort, couting sort
 
-![รูปผลการทดลอง](./imagepath/image.png)
+![alt text](picture/Figure_2.png)
 
 3. ทดลองเปลี่ยนค่าช่วงข้อมูลให้มีขนาดกว้างขึ้น โดยเปลี่ยนค่า 999 เป็น 99999
    ```python

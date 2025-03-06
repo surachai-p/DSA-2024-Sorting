@@ -356,6 +356,7 @@ selection_sort_with_steps(test_data.copy())
 
 ![image](https://github.com/user-attachments/assets/45d4ef91-a2f3-4dd9-a20d-cc8bede1ea7d)
 
+![image](https://github.com/user-attachments/assets/86e44e6e-3629-4216-afd7-b0336f94c910)
 
 
 2. วัดประสิทธิภาพเมื่อทดสอบกับชุดข้อมูลที่เกือบเรียงลำดับแล้ว (nearly sorted data)

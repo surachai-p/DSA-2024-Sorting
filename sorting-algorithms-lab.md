@@ -455,10 +455,39 @@ quick_sort_with_steps(test_data.copy())
    ### บันทึกผลแบบทดสอบ
 บันทึกโค้ดและรูปผลแบบทดสอบ
 ```python
-บันทึกโค้ด แบบทดสอบ
+def quick_sort_with_steps(arr, depth=0):
+    indent = "  " * depth
+    print(f"{indent}quick_sort({arr})")
+    
+    if len(arr) <= 1:
+        print(f"{indent}ข้อมูลมีขนาด <= 1, ส่งคืน {arr}")
+        return arr
+
+    # เลือก pivot แบบ Median of Three
+    first, mid, last = arr[0], arr[len(arr)//2], arr[-1]
+    pivot = sorted([first, mid, last])[1]  # เลือกค่าที่อยู่ตรงกลางจาก 3 ค่า
+    print(f"{indent}เลือก pivot = {pivot}")
+
+    # แบ่งข้อมูลเป็นกลุ่มที่น้อยกว่าหรือเท่ากับ pivot และมากกว่า pivot
+    left = [x for x in arr if x < pivot]
+    middle = [x for x in arr if x == pivot]
+    right = [x for x in arr if x > pivot]
+
+    print(f"{indent}แบ่งข้อมูล: left = {left}, middle = {middle}, right = {right}")
+
+    # เรียกใช้งาน Quick Sort กับกลุ่มที่แบ่งได้
+    result = quick_sort_with_steps(left, depth + 1) + middle + quick_sort_with_steps(right, depth + 1)
+    print(f"{indent}ผลลัพธ์รวม: {result}")
+
+    return result
+
+# ทดสอบแสดงขั้นตอน
+test_data = [64, 34, 25, 12, 22, 11, 45, 24, 6, 90]
+quick_sort_with_steps(test_data.copy())
 ```
 
-![บันทึกรูปผลการทดลอง](image-paht/image.png)
+![image](https://github.com/user-attachments/assets/1c4c62c1-ec28-43af-b830-23c61f9c8f71)
+
 
 2. ทดสอบกับชุดข้อมูลที่มีค่าซ้ำกันจำนวนมาก และตรวจสอบผลลัพธ์
 ### บันทึกผลแบบทดสอบ

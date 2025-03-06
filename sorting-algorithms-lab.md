@@ -1043,9 +1043,9 @@ compare_sort()
 
 ![image](https://github.com/user-attachments/assets/ca9f9e77-809b-4516-a32a-713265bacce9)
 
-    ผลการเปรียบเทียบ shell sort, quick sort, merge sort,radix sort, couting sort
-![รูปผลการทดลอง](./imagepath/image.png)
+ผลการเปรียบเทียบ shell sort, quick sort, merge sort,radix sort, couting sort
 
+![image](https://github.com/user-attachments/assets/cfd4badb-d600-4fc5-af70-789bba08c789)
 
 
 4. ทดลองเปลี่ยนขนาดอินพุต 

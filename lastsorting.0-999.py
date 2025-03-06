@@ -103,7 +103,7 @@ def counting_sort_by_digit(arr, exp):
 
 # ฟังก์ชันเปรียบเทียบประสิทธิภาพ
 def compare_sort():
-    sizes = [100, 500, 1000, 5000, 10000, 20000]
+    sizes = [1000, 5000, 10000, 20000, 40000, 100000]  # เปลี่ยนขนาดอินพุต
     shell_times = []
     quick_times = []
     merge_times = []
@@ -111,7 +111,7 @@ def compare_sort():
     counting_times = []
 
     for size in sizes:
-        data = [random.randint(0, 99999) for _ in range(size)]
+        data = [random.randint(0, 999) for _ in range(size)]  # เปลี่ยนข้อมูลให้อยู่ในช่วง 0-999
         
         # วัดเวลา Shell Sort
         start_time = time.time()
@@ -154,12 +154,12 @@ def compare_sort():
     plt.plot(sizes, radix_times, marker='*', label='Radix Sort')
     plt.plot(sizes, counting_times, marker='o', label='Counting Sort')
 
-    plt.title('Performance Comparison of Sorting Algorithms (Data 0-99999). Created By [Phum Akrthum]')
+    plt.title('Performance Comparison of Sorting Algorithms (Data 0-999). Created By [Phum Akrthum]')
     plt.xlabel('Input Size')
     plt.ylabel('Time (Milliseconds)')
     plt.legend()
     plt.grid(True)
-    plt.savefig('Sorting_Performance_Comparison_All.png')
+    plt.savefig('Sorting_Performance_Comparison_0-999.png')
     plt.show()
 
 # เรียกใช้ฟังก์ชัน

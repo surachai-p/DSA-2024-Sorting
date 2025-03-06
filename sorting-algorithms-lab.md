@@ -967,7 +967,7 @@ compare_sort()
 
 ![alt text](picture/Figure_4.png)
 
-    ผลการเปรียบเทียบ shell sort, quick sort, merge sort,radix sort, couting sort
+ผลการเปรียบเทียบ shell sort, quick sort, merge sort,radix sort, couting sort
 ![alt text](picture/Figure_5.png)
 
 
@@ -982,19 +982,27 @@ compare_sort()
 
     ผลการเปรียบเทียบ shell sort, quick sort, merge sort,radix sort, couting sort (กรณี Data 0-999)
 
-![รูปผลการทดลอง](./imagepath/image.png)
+![alt text](picture/Figure_7.png)
 
     ผลการเปรียบเทียบ shell sort, quick sort, merge sort,radix sort, couting sort (กรณี Data 0-99999)
 
-![รูปผลการทดลอง](./imagepath/image.png)
+![alt text](picture/Figure_8.png)
 
     ผลการเปรียบเทียบ shell sort, quick sort, merge sort,radix sort, couting sort (กรณี Data 0-999999)
 
-![รูปผลการทดลอง](./imagepath/image.png)
+![alt text](picture/Figure_9.png)
 
 
 ### สรุปผลการลอง เปรียบเทียบประสิทธิภาพของการเรียงข้อมูลแต่ละแบบ เมื่อใช้กับข้อมูลขนาดเล็ก ขนาดใหญ่ และข้อมูลที่มีความความแตกต่างของข้อมูลน้อย และความแตกต่างของข้อมูลมาก
 
 ```html
 เขียนสรุปผลการทดลองที่นี่
+
+เมื่อทำการเปรียบเทียบประสิทธิภาพของอัลกอริธึมการเรียงข้อมูล Bubble Sort, Insertion Sort, Selection Sort, Shell Sort, Quick Sort, Radix Sort, และ Counting Sort ในสถานการณ์ต่างๆ 
+สรุปผล:
+เมื่อใช้กับข้อมูลขนาดเล็ก: Bubble Sort, Insertion Sort, และ Selection Sort ยังทำงานได้พอสมควร, แต่ Shell Sort, Quick Sort จะได้ผลดีกว่าเมื่อขนาดข้อมูลเพิ่มขึ้น
+เมื่อใช้กับข้อมูลขนาดใหญ่: Bubble Sort, Insertion Sort, และ Selection Sort จะช้าลงอย่างมาก, ในขณะที่ Shell Sort, Quick Sort, Radix Sort, และ Counting Sort จะทำงานได้ดีขึ้น
+เมื่อข้อมูลเกือบเรียงลำดับแล้ว: Bubble Sort และ Insertion Sort จะได้ผลดีในกรณีนี้, แต่ Quick Sort อาจทำงานไม่ดีหากเลือก pivot ที่ไม่เหมาะสม
+เมื่อข้อมูลสุ่ม: Quick Sort, Radix Sort, และ Counting Sort จะทำงานได้ดีกว่าเนื่องจากวิธีการแบ่งข้อมูลที่มีประสิทธิภาพ
+การเลือกอัลกอริธึมที่เหมาะสมที่สุดจะขึ้นอยู่กับขนาดของข้อมูล, รูปแบบของข้อมูล (เรียงลำดับแล้วหรือสุ่ม), และข้อจำกัดของเวลาในการประมวลผล.
 ``` 

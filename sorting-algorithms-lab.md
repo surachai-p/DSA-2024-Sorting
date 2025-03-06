@@ -1067,7 +1067,7 @@ compare_sort()
 
 ผลการเปรียบเทียบ shell sort, quick sort, merge sort,radix sort, couting sort (กรณี Data 0-999999)
 
-![รูปผลการทดลอง](./imagepath/image.png)
+![image](https://github.com/user-attachments/assets/58362313-58f2-4d2c-88a7-b272991b08b3)
 
 
 ### สรุปผลการลอง เปรียบเทียบประสิทธิภาพของการเรียงข้อมูลแต่ละแบบ เมื่อใช้กับข้อมูลขนาดเล็ก ขนาดใหญ่ และข้อมูลที่มีความความแตกต่างของข้อมูลน้อย และความแตกต่างของข้อมูลมาก

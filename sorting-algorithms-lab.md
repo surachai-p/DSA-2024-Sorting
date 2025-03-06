@@ -165,7 +165,9 @@ print("ข้อมูลหลังเรียง:", sorted_data)
 print(f"เวลาที่ใช้: {(end_time - start_time)*1000:.6f} มิลลิวินาที")
 ```
 ### บันทึกผลการทดลอง
-บันทึกรูปผลการทดลอง
+
+![image](https://github.com/user-attachments/assets/983136bc-18ed-488f-98d9-7dcae4c93db1)
+
 
 ![บันทึกรูปผลการทดลอง](image-paht/image.png)
 

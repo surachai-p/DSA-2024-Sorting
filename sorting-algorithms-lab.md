@@ -1037,15 +1037,15 @@ compare_sort()
 
 ผลการเปรียบเทียบ Selection sort, shell sort, quick sort
 
-![รูปผลการทดลอง](./imagepath/image.png)
+![alt text](image.png)
 
 ผลการเปรียบเทียบ shell sort, quick sort, radix sort
 
-![รูปผลการทดลอง](./imagepath/image.png)
+![alt text](image.png)
 
 ผลการเปรียบเทียบ shell sort, quick sort, radix sort, couting sort
 
-![รูปผลการทดลอง](./imagepath/image.png)
+![alt text](image.png)
 
 3. ทดลองเปลี่ยนค่าช่วงข้อมูลให้มีขนาดกว้างขึ้น โดยเปลี่ยนค่า 999 เป็น 99999
    ```python

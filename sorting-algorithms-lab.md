@@ -1027,7 +1027,7 @@ compare_sort()
 
 ผลการเปรียบเทียบ shell sort, quick sort, radix sort, couting sort
 
-![รูปผลการทดลอง](./imagepath/image.png)
+![image](https://github.com/user-attachments/assets/1a2ff57a-3def-4fa9-8351-d0dc92210f0b)
 
 3. ทดลองเปลี่ยนค่าช่วงข้อมูลให้มีขนาดกว้างขึ้น โดยเปลี่ยนค่า 999 เป็น 99999
    ```python

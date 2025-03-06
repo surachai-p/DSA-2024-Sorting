@@ -735,7 +735,7 @@ merge_sort_with_steps(test_data.copy())
 
 ![Screenshot 2025-03-06 220358](https://github.com/user-attachments/assets/189d991b-9242-4b09-9646-c06d7d3abfb2)
 ![image](https://github.com/user-attachments/assets/84c16e22-54af-4bfe-aa1a-6fd79ea39f85)
-![Uploading image.png…]()
+![image](https://github.com/user-attachments/assets/4a1d06a2-2a62-4cd8-9ed4-d2c9bcea3a2c)
 
 ```
 
@@ -1001,20 +1001,19 @@ compare_sort()
 ### บันทึกรูปผลการทดลอง
 ผลการเปรียบเทียบ Bubble sort, Insertion sort, Selection sort
 
-![รูปผลการทดลอง](./imagepath/image.png)
-
+![image](https://github.com/user-attachments/assets/da909027-76a1-435a-8439-b6ed6db06415)
 
 ผลการเปรียบเทียบ Selection sort, shell sort, quick sort
 
-![รูปผลการทดลอง](./imagepath/image.png)
+![image](https://github.com/user-attachments/assets/48627e5f-dc62-41ee-bd82-760ca1e1be52)
 
 ผลการเปรียบเทียบ shell sort, quick sort, radix sort
 
-![รูปผลการทดลอง](./imagepath/image.png)
+![image](https://github.com/user-attachments/assets/c659aed8-eeff-4f72-8066-97aff9265858)
 
 ผลการเปรียบเทียบ shell sort, quick sort, radix sort, couting sort
 
-![รูปผลการทดลอง](./imagepath/image.png)
+![Uploading image.png…]()
 
 3. ทดลองเปลี่ยนค่าช่วงข้อมูลให้มีขนาดกว้างขึ้น โดยเปลี่ยนค่า 999 เป็น 99999
    ```python

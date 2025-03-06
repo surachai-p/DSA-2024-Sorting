@@ -518,19 +518,83 @@ quick_sort_with_steps(test_data.copy())
    ### บันทึกผลแบบทดสอบ
 บันทึกโค้ดและรูปผลแบบทดสอบ
 ```python
-บันทึกโค้ด แบบทดสอบ
+import time
+
+# ฟังก์ชัน Quick Sort ที่เลือก pivot โดยใช้ Median of Three
+def quick_sort(arr):
+    if len(arr) <= 1:
+        return arr
+    
+    # เลือก pivot โดยใช้การเปรียบเทียบตำแหน่งแรก, ตำแหน่งกลาง และตำแหน่งสุดท้าย
+    first = arr[0]
+    last = arr[-1]
+    middle = arr[len(arr) // 2]
+    
+    # ใช้ median of three เพื่อเลือก pivot
+    pivot = sorted([first, middle, last])[1]  # เลือกค่ากลางจากสามค่าที่เปรียบเทียบ
+    
+    # แบ่งข้อมูลเป็นสองส่วน
+    left = [x for x in arr if x < pivot]  # ใช้ < แทน <= เพื่อหลีกเลี่ยงค่าที่เท่ากับ pivot
+    right = [x for x in arr if x > pivot]  # ใช้ > แทน >= เพื่อหลีกเลี่ยงค่าที่เท่ากับ pivot
+    
+    # รวมผลลัพธ์
+    return quick_sort(left) + [pivot] + quick_sort(right)
+
+# ทดสอบ Quick Sort
+test_data = [64, 34, 25, 12, 22, 11, 45, 24, 6, 90]
+print("ข้อมูลก่อนเรียง:", test_data)
+
+start_time = time.time()
+sorted_data = quick_sort(test_data.copy())
+end_time = time.time()
+
+print("ข้อมูลหลังเรียง:", sorted_data)
+print(f"เวลาที่ใช้: {(end_time - start_time)*1000:.6f} มิลลิวินาที")
+
+# ฟังก์ชัน Quick Sort พร้อมการแสดงขั้นตอน
+def quick_sort_with_steps(arr, depth=0):
+    indent = "  " * depth
+    print(f"{indent}quick_sort({arr})")
+    
+    if len(arr) <= 1:
+        print(f"{indent}ข้อมูลมีขนาด <= 1, ส่งคืน {arr}")
+        return arr
+    
+    first = arr[0]
+    last = arr[-1]
+    middle = arr[len(arr) // 2]
+    
+    # ใช้ median of three เพื่อเลือก pivot
+    pivot = sorted([first, middle, last])[1]
+    print(f"{indent}เลือก pivot = {pivot} (จาก {first}, {middle}, {last})")
+    
+    left = [x for x in arr if x < pivot]  # ใช้ < แทน <=
+    right = [x for x in arr if x > pivot]  # ใช้ > แทน >=
+    
+    print(f"{indent}แบ่งข้อมูล: left = {left}, right = {right}")
+    
+    result = quick_sort_with_steps(left, depth + 1) + [pivot] + quick_sort_with_steps(right, depth + 1)
+    print(f"{indent}ผลลัพธ์รวม: {result}")
+    
+    return result
+
+# ทดสอบแสดงขั้นตอน
+test_data = [64, 34, 25, 12, 22, 11, 45, 24, 6, 90]
+quick_sort_with_steps(test_data.copy())
 ```
 
-![บันทึกรูปผลการทดลอง](image-paht/image.png)
+![image](https://github.com/user-attachments/assets/8043cf30-6dc9-4197-9bb3-4b03154c366e)
 
 2. ทดสอบกับชุดข้อมูลที่มีค่าซ้ำกันจำนวนมาก และตรวจสอบผลลัพธ์
 ### บันทึกผลแบบทดสอบ
 บันทึกโค้ดและรูปผลแบบทดสอบ
 ```html
- อธิบายผลที่นี่
+- ลดโอกาสกรณีที่ Quick Sort ทำงานช้า (เมื่อข้อมูลเรียงลำดับแล้วหรือเกือบเรียงลำดับ)
+- ทำให้แบ่งข้อมูลได้สมดุลมากขึ้น ส่งผลให้ประสิทธิภาพดีขึ้นในกรณีข้อมูลหลากหลาย
+- ลดจำนวนขั้นตอนการเรียกซ้ำ (recursive calls) ในกรณีข้อมูลมีค่าซ้ำกันจำนวนมาก
 ```
 
-![บันทึกรูปผลการทดลอง](image-paht/image.png)
+![image](https://github.com/user-attachments/assets/09ee0604-fc62-45da-bb9d-43c8b0ecf413)
 
 
 ## การทดลองที่ 5: Shell Sort
@@ -636,20 +700,117 @@ shell_sort_with_steps(test_data.copy())
 1. เปรียบเทียบประสิทธิภาพกับ Insertion Sort ปกติเมื่อทดสอบกับชุดข้อมูลขนาดใหญ่
    ### บันทึกผลแบบทดสอบ
 ```html
- อธิบายผลที่นี่
+  import time
+import random
+
+# Shell Sort
+
+def shell_sort(arr):
+    n = len(arr)
+    gap = n // 2
+
+    while gap > 0:
+        for i in range(gap, n):
+            temp = arr[i]
+            j = i
+            while j >= gap and arr[j - gap] > temp:
+                arr[j] = arr[j - gap]
+                j -= gap
+            arr[j] = temp
+        gap //= 2
+    return arr
+
+# Insertion Sort
+
+def insertion_sort(arr):
+    for i in range(1, len(arr)):
+        key = arr[i]
+        j = i - 1
+        while j >= 0 and arr[j] > key:
+            arr[j + 1] = arr[j]
+            j -= 1
+        arr[j + 1] = key
+    return arr
+
+# สร้างชุดข้อมูลขนาดใหญ่
+large_data = [random.randint(1, 10000) for _ in range(10000)]
+
+# ทดสอบ Shell Sort
+shell_data = large_data.copy()
+start_time = time.time()
+shell_sort(shell_data)
+shell_time = time.time() - start_time
+
+# ทดสอบ Insertion Sort
+insertion_data = large_data.copy()
+start_time = time.time()
+insertion_sort(insertion_data)
+insertion_time = time.time() - start_time
+
+print(f"Shell Sort ใช้เวลา: {shell_time:.6f} วินาที")
+print(f"Insertion Sort ใช้เวลา: {insertion_time:.6f} วินาที")
 ```
 บันทึกรูปผลแบบทดสอบ
 
-![บันทึกรูปผลการทดลอง](image-paht/image.png)
+![image](https://github.com/user-attachments/assets/22e4e50d-03ec-4ac2-bbe9-c04811e3edfc)
 
 2. ทดสอบกับชุดข้อมูลที่เกือบเรียงลำดับแล้ว และวัดประสิทธิภาพ
 ### บันทึกผลแบบทดสอบ
 ```html
- อธิบายผลที่นี่
+ import time
+import random
+
+# Shell Sort
+
+def shell_sort(arr):
+    n = len(arr)
+    gap = n // 2
+
+    while gap > 0:
+        for i in range(gap, n):
+            temp = arr[i]
+            j = i
+            while j >= gap and arr[j - gap] > temp:
+                arr[j] = arr[j - gap]
+                j -= gap
+            arr[j] = temp
+        gap //= 2
+    return arr
+
+# Insertion Sort
+
+def insertion_sort(arr):
+    for i in range(1, len(arr)):
+        key = arr[i]
+        j = i - 1
+        while j >= 0 and arr[j] > key:
+            arr[j + 1] = arr[j]
+            j -= 1
+        arr[j + 1] = key
+    return arr
+
+# สร้างชุดข้อมูลที่เกือบเรียงลำดับแล้ว
+nearly_sorted_data = list(range(1, 10001))
+random.shuffle(nearly_sorted_data[:100])  # สลับตำแหน่งบางส่วน
+
+# ทดสอบ Shell Sort
+shell_data = nearly_sorted_data.copy()
+start_time = time.time()
+shell_sort(shell_data)
+shell_time = time.time() - start_time
+
+# ทดสอบ Insertion Sort
+insertion_data = nearly_sorted_data.copy()
+start_time = time.time()
+insertion_sort(insertion_data)
+insertion_time = time.time() - start_time
+
+print(f"Shell Sort ใช้เวลา: {shell_time:.6f} วินาที")
+print(f"Insertion Sort ใช้เวลา: {insertion_time:.6f} วินาที")
 ```
 บันทึกรูปผลแบบทดสอบ
 
-![บันทึกรูปผลการทดลอง](image-paht/image.png)
+![image](https://github.com/user-attachments/assets/a8f9048a-6905-4860-81d8-de1afc46022f)
 
 ## การทดลองที่ 6: Merge Sort
 
@@ -772,7 +933,7 @@ def merge_with_steps(left, right, depth=0):
     
     print(f"{indent}  ผลลัพธ์สุดท้าย: {result}")
     return result
-
+```
 # ทดสอบแสดงขั้นตอน
 test_data = [64, 34, 25, 12, 22, 11, 45, 24, 6, 90]
 merge_sort_with_steps(test_data.copy())
@@ -791,11 +952,60 @@ merge_sort_with_steps(test_data.copy())
 1. ทดสอบกับชุดข้อมูลที่เกือบเรียงลำดับแล้ว และวัดประสิทธิภาพ
 ### บันทึกผลแบบทดสอบ
 ```html
- อธิบายผลที่นี่
+ import time
+
+# ชุดข้อมูลที่เกือบเรียงลำดับแล้ว
+nearly_sorted_data = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 12, 11]
+
+# ฟังก์ชัน Merge Sort
+def merge_sort(arr):
+    if len(arr) <= 1:
+        return arr
+    
+    # แบ่งข้อมูลออกเป็นสองส่วน
+    mid = len(arr) // 2
+    left = arr[:mid]
+    right = arr[mid:]
+    
+    # เรียกใช้ recursive กับส่วนย่อย
+    left = merge_sort(left)
+    right = merge_sort(right)
+    
+    # รวมสองส่วนกลับเข้าด้วยกัน
+    return merge(left, right)
+
+def merge(left, right):
+    result = []
+    i = j = 0
+    
+    # เปรียบเทียบและนำค่าที่น้อยกว่าใส่ในผลลัพธ์
+    while i < len(left) and j < len(right):
+        if left[i] <= right[j]:
+            result.append(left[i])
+            i += 1
+        else:
+            result.append(right[j])
+            j += 1
+    
+    # เพิ่มส่วนที่เหลือ
+    result.extend(left[i:])
+    result.extend(right[j:])
+    
+    return result
+
+# วัดประสิทธิภาพ
+start_time = time.time()
+sorted_data = merge_sort(nearly_sorted_data.copy())
+end_time = time.time()
+
+# แสดงผล
+print("ข้อมูลที่เรียงลำดับ:", sorted_data)
+print(f"เวลาที่ใช้: {(end_time - start_time) * 1000:.6f} มิลลิวินาที")
 ```
 บันทึกรูปผลแบบทดสอบ
 
-![บันทึกรูปผลการทดลอง](image-paht/image.png)
+![image](https://github.com/user-attachments/assets/311d93c5-d446-436d-b16e-dd2598a3b719)
+
 
 ## เปรียบเทียบประสิทธิภาพการเรียงข้อมูลแต่ละวิธี
 1. สร้างไฟล์เพื่อรวมโค้ดการเรียงข้อมูลทุกแบบ ตั้งชื่อไฟล์ sorting.py

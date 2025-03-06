@@ -1284,7 +1284,7 @@ compare_sort()
 
 ผลการเปรียบเทียบ Selection sort, shell sort, quick sort
 
-![image](https://github.com/user-attachments/assets/01365150-aad1-4797-9afc-1a3a01f17fd5)
+![image](https://github.com/user-attachments/assets/f5345b73-c87b-47ad-b3af-8d4e23730e43)
 
 
 ผลการเปรียบเทียบ shell sort, quick sort, radix sort

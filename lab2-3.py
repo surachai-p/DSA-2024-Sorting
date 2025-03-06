@@ -16,7 +16,7 @@ def insertion_sort_descending(arr):
     
     return arr
 
-# ทดสอบฟังก์ชัน
-test_data = [64, 34, 25, 12, 22, 11, 45, 24, 6, 90]
-sorted_data = insertion_sort_descending(test_data.copy())
-print("Sorted array (Descending):", sorted_data)
+# ทดสอบกับชุดข้อมูลที่มีค่าซ้ำกัน
+test_data_duplicates = [3, 1, 4, 1, 5, 9, 2, 6, 5, 9]
+sorted_data_duplicates = insertion_sort_descending(test_data_duplicates.copy())
+print("Sorted array with duplicates (Descending):", sorted_data_duplicates)

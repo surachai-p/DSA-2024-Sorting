@@ -493,11 +493,11 @@ quick_sort_with_steps(test_data.copy())
 ### บันทึกผลแบบทดสอบ
 บันทึกโค้ดและรูปผลแบบทดสอบ
 ```html
- อธิบายผลที่นี่
+ถ้ามีค่าซ้ำกันเยอะ ➝ Quick Sort ทำงานได้เร็วขึ้นกว่ากรณีที่ค่าต่างกันทั้งหมด
+ถ้าซ้ำกันทั้งหมด (เช่น [7,7,7,7,7]) ➝ Quick Sort แทบจะไม่ต้องทำงาน
 ```
 
-![บันทึกรูปผลการทดลอง](image-paht/image.png)
-
+![image](https://github.com/user-attachments/assets/842d5559-0ff5-4abc-ade0-e997ceea9af5)
 
 ## การทดลองที่ 5: Shell Sort
 

@@ -1285,20 +1285,31 @@ compare_sort()
 ### บันทึกรูปผลการทดลอง
 ผลการเปรียบเทียบ Bubble sort, Insertion sort, Selection sort
 
-![รูปผลการทดลอง](./imagepath/image.png)
+![รูปผลการทดลอง]
+
+![image](https://github.com/user-attachments/assets/6b1c4e5f-dd79-4397-8915-7a10c5939e5f)
 
 
 ผลการเปรียบเทียบ Selection sort, shell sort, quick sort
 
-![รูปผลการทดลอง](./imagepath/image.png)
+![รูปผลการทดลอง]
+
+![image](https://github.com/user-attachments/assets/30f95036-1745-40bf-a8f0-f660237b9e2b)
+
 
 ผลการเปรียบเทียบ shell sort, quick sort, radix sort
 
-![รูปผลการทดลอง](./imagepath/image.png)
+![รูปผลการทดลอง]
+
+![image](https://github.com/user-attachments/assets/c61ed97f-3da3-4108-8a8c-47ed0c83764e)
+
 
 ผลการเปรียบเทียบ shell sort, quick sort, radix sort, couting sort
 
-![รูปผลการทดลอง](./imagepath/image.png)
+![รูปผลการทดลอง]
+
+![image](https://github.com/user-attachments/assets/a2e8e2b6-51e9-4f87-9360-c19b54f33eff)
+
 
 3. ทดลองเปลี่ยนค่าช่วงข้อมูลให้มีขนาดกว้างขึ้น โดยเปลี่ยนค่า 999 เป็น 99999
    ```python
@@ -1308,15 +1319,24 @@ compare_sort()
 
    ผลการเปรียบเทียบ Bubble sort, Insertion sort, Selection sort
 
-![รูปผลการทดลอง](./imagepath/image.png)
+![รูปผลการทดลอง]
+
+![image](https://github.com/user-attachments/assets/2e421ecc-aabf-4e5b-803d-8bb7ac5ccd73)
+
 
 
 ผลการเปรียบเทียบ Selection sort, shell sort, quick sort
 
-![รูปผลการทดลอง](./imagepath/image.png)
+![รูปผลการทดลอง]
+
+![image](https://github.com/user-attachments/assets/076f7add-16b7-45c7-a14b-8fbc44292b04)
+
 
     ผลการเปรียบเทียบ shell sort, quick sort, merge sort,radix sort, couting sort
-![รูปผลการทดลอง](./imagepath/image.png)
+![รูปผลการทดลอง]
+
+![image](https://github.com/user-attachments/assets/01346f09-d4bb-47bf-8c9b-d7880b9536dd)
+
 
 
 
@@ -1330,19 +1350,36 @@ compare_sort()
 
     ผลการเปรียบเทียบ shell sort, quick sort, merge sort,radix sort, couting sort (กรณี Data 0-999)
 
-![รูปผลการทดลอง](./imagepath/image.png)
+![รูปผลการทดลอง]
+
+![image](https://github.com/user-attachments/assets/c3743935-d16f-41ba-9953-d1e428b757dd)
+
 
     ผลการเปรียบเทียบ shell sort, quick sort, merge sort,radix sort, couting sort (กรณี Data 0-99999)
 
-![รูปผลการทดลอง](./imagepath/image.png)
+![รูปผลการทดลอง]
+
+![image](https://github.com/user-attachments/assets/f01ba555-bef8-4bab-b161-0c2ae69d5f11)
+
 
     ผลการเปรียบเทียบ shell sort, quick sort, merge sort,radix sort, couting sort (กรณี Data 0-999999)
 
-![รูปผลการทดลอง](./imagepath/image.png)
+![รูปผลการทดลอง]
+![image](https://github.com/user-attachments/assets/d3cc8cb7-3751-43c8-b4ab-1c31a0419e60)
+
 
 
 ### สรุปผลการลอง เปรียบเทียบประสิทธิภาพของการเรียงข้อมูลแต่ละแบบ เมื่อใช้กับข้อมูลขนาดเล็ก ขนาดใหญ่ และข้อมูลที่มีความความแตกต่างของข้อมูลน้อย และความแตกต่างของข้อมูลมาก
 
 ```html
-เขียนสรุปผลการทดลองที่นี่
+ข้อมูลขนาดเล็ก: Bubble Sort และ Selection Sort ทำงานช้าใกล้เคียงกัน
+Insertion Sort ทำงานได้เร็วกว่าเมื่อข้อมูลเกือบเรียงแล้ว
+
+ข้อมูลขนาดใหญ่: Bubble Sort และ Insertion Sort ช้ามาก
+Selection Sort ทำงานได้เร็วกว่าเล็กน้อย
+
+ข้อมูลที่มีความแตกต่างน้อย (เกือบเรียงแล้ว):Insertion Sort ทำงานได้ดีที่สุด
+
+ข้อมูลที่มีความแตกต่างมาก: Selection Sort ทำงานได้เร็วที่สุด
+Bubble Sort และ Insertion Sort ช้ามาก
 ``` 

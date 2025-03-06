@@ -103,6 +103,7 @@ bubble_sort_with_steps(test_data.copy())
 ```
 ### บันทึกผลการทดลอง
 บันทึกรูปผลการทดลอง
+![alt text](image-1.png)
 ![บันทึกรูปผลการทดลอง](image-paht/image.png)
 
 ### แบบทดสอบ

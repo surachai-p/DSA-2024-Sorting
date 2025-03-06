@@ -446,9 +446,9 @@ quick_sort_with_steps(test_data.copy())
 ```
 
 ### บันทึกผลการทดลอง
-บันทึกรูปผลการทดลอง
 
-![บันทึกรูปผลการทดลอง](image-paht/image.png)
+![image](https://github.com/user-attachments/assets/016154a1-7a74-4e01-a5ef-3bd94008118f)
+
 
 ### แบบทดสอบ
 1. ปรับปรุงการเลือก pivot โดยใช้การเปรียบเทียบตำแหน่งแรก ตำแหน่งตรงกลาง และแหน่งสุดท้าย

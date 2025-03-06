@@ -1037,8 +1037,7 @@ compare_sort()
 
    ผลการเปรียบเทียบ Bubble sort, Insertion sort, Selection sort
 
-![รูปผลการทดลอง](./imagepath/image.png)
-
+![image](https://github.com/user-attachments/assets/8fe734dc-41dd-4101-bcf7-67e1e3a20d68)
 
 ผลการเปรียบเทียบ Selection sort, shell sort, quick sort
 

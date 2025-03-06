@@ -592,7 +592,6 @@ shell_sort_with_steps(test_data.copy())
 ### บันทึกผลการทดลอง
 
 ![image](https://github.com/user-attachments/assets/5b4c8c54-3996-40b6-a364-4bba0e79c332)
-
 ![image](https://github.com/user-attachments/assets/4c508414-86a4-486d-a6bf-c95f90e43ccb)
 
 

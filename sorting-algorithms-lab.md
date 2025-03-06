@@ -590,9 +590,11 @@ test_data = [64, 34, 25, 12, 22, 11, 45, 24, 6, 90]
 shell_sort_with_steps(test_data.copy())
 ```
 ### บันทึกผลการทดลอง
-บันทึกรูปผลการทดลอง
 
-![บันทึกรูปผลการทดลอง](image-paht/image.png)
+![image](https://github.com/user-attachments/assets/5b4c8c54-3996-40b6-a364-4bba0e79c332)
+
+![image](https://github.com/user-attachments/assets/4c508414-86a4-486d-a6bf-c95f90e43ccb)
+
 
 ### แบบทดสอบ
 1. เปรียบเทียบประสิทธิภาพกับ Insertion Sort ปกติเมื่อทดสอบกับชุดข้อมูลขนาดใหญ่

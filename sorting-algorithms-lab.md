@@ -111,6 +111,45 @@ bubble_sort_with_steps(test_data.copy())
    ### บันทึกผลแบบทดสอบ
 บันทึกโค้ดแบบทดสอบ
 ```python
+import time
+
+def insertion_sort_descending(arr):
+    """
+    เรียงลำดับข้อมูลในอาร์เรย์โดยใช้อัลกอริทึม Insertion Sort จากมากไปน้อย
+
+    Args:
+        arr: อาร์เรย์ของข้อมูลที่ต้องการเรียงลำดับ
+
+    Returns:
+        อาร์เรย์ของข้อมูลที่เรียงลำดับแล้ว (จากมากไปน้อย)
+    """
+
+    for i in range(1, len(arr)):
+        key = arr[i]
+        j = i - 1
+
+        # เปลี่ยนเงื่อนไขการเปรียบเทียบเป็น arr[j] < key
+        while j >= 0 and arr[j] < key:
+            arr[j+1] = arr[j]
+            j -= 1
+
+        arr[j+1] = key
+
+    return arr
+
+# ทดสอบ Insertion Sort (เรียงจากมากไปน้อย)
+test_data = [64, 34, 25, 12, 22, 11, 45, 24, 6, 90]
+print("ข้อมูลก่อนเรียง:", test_data)
+
+data_to_sort = test_data.copy()
+
+start_time = time.time()
+sorted_data = insertion_sort_descending(data_to_sort)
+end_time = time.time()
+
+print("ข้อมูลหลังเรียง (มากไปน้อย):", sorted_data)
+print(f"เวลาที่ใช้: {(end_time - start_time)*1000:.6f} มิลลิวินาที")
+
 บันทึกโค้ด แบบทดสอบ
 ```
 บันทึกรูปผลแบบทดสอบ

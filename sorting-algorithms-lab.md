@@ -1023,7 +1023,7 @@ compare_sort()
 
 ผลการเปรียบเทียบ shell sort, quick sort, radix sort
 
-![รูปผลการทดลอง](./imagepath/image.png)
+![image](https://github.com/user-attachments/assets/28679449-f1fb-4ee1-adba-a0cc5b45b756)
 
 ผลการเปรียบเทียบ shell sort, quick sort, radix sort, couting sort
 

@@ -103,7 +103,9 @@ bubble_sort_with_steps(test_data.copy())
 ### บันทึกผลการทดลอง
 บันทึกรูปผลการทดลอง
 ![alt text](image-1.png)
+
 ![alt text](image-2.png)
+
 ![alt text](image-3.png)
 
 ### แบบทดสอบ
@@ -224,6 +226,7 @@ insertion_sort_with_steps(test_data.copy())
 ### บันทึกผลการทดลอง
 บันทึกรูปผลการทดลอง
 ![alt text](image-7.png)
+
 ![alt text](image-8.png)
 
 ### แบบทดสอบ
@@ -254,6 +257,7 @@ test_data = [3, 1, 4, 1, 5, 9, 2, 6, 5, 9]
 insertion_sort_desc_with_steps(test_data.copy())
 ```
 ![alt text](image-9.png)
+
 ![alt text](image-10.png)
 
 2. ทดสอบกับชุดข้อมูลที่มีค่าซ้ำกัน เช่น `[3, 1, 4, 1, 5, 9, 2, 6, 5, 9]` และตรวจสอบผลลัพธ์
@@ -265,6 +269,7 @@ insertion_sort_desc_with_steps(test_data.copy())
 บันทึกรูปผลแบบทดสอบ
 
 ![alt text](image-11.png)
+
 ![alt text](image-12.png)
 
 
@@ -386,8 +391,11 @@ test_data = [64, 34, 25, 12, 22, 11, 45, 24, 6, 90]
 selection_sort_desc_with_steps(test_data.copy())
 ```
 ![alt text](image-14.png)
+
 ![alt text](image-16.png)
+
 ![alt text](image-15.png)
+
 ![alt text](image-17.png)
 
 2. วัดประสิทธิภาพเมื่อทดสอบกับชุดข้อมูลที่เกือบเรียงลำดับแล้ว (nearly sorted data)
@@ -400,9 +408,13 @@ selection_sort_desc_with_steps(test_data.copy())
 บันทึกรูปผลแบบทดสอบ
 
 ![alt text](image-18.png)
+
 ![alt text](image-19.png)
+
 ![alt text](image-20.png)
+
 ![alt text](image-21.png)
+
 ![alt text](image-22.png)
 
 
@@ -628,7 +640,9 @@ shell_sort_with_steps(test_data.copy())
 บันทึกรูปผลการทดลอง
 
 ![alt text](image-28.png)
+
 ![alt text](image-29.png)
+
 ![alt text](image-30.png)
 
 ### แบบทดสอบ
@@ -651,7 +665,9 @@ shell_sort_with_steps(test_data.copy())
 บันทึกรูปผลแบบทดสอบ
 
 ![alt text](image-32.png)
+
 ![alt text](image-33.png)
+
 ![alt text](image-34.png)
 
 ## การทดลองที่ 6: Merge Sort
@@ -782,7 +798,9 @@ merge_sort_with_steps(test_data.copy())
 ### บันทึกผลการทดลอง
 บันทึกรูปผลการทดลอง
 ![alt text](image-36.png)
+
 ![alt text](image-37.png)
+
 ![alt text](image-38.png)
 ```
 
@@ -795,8 +813,11 @@ merge_sort_with_steps(test_data.copy())
 ```
 บันทึกรูปผลแบบทดสอบ
 ![alt text](image-39.png)
+
 ![alt text](image-40.png)
+
 ![alt text](image-41.png)
+
 ![alt text](image-42.png)
 
 ## เปรียบเทียบประสิทธิภาพการเรียงข้อมูลแต่ละวิธี
@@ -1107,6 +1128,6 @@ compare_sort()
 ### สรุปผลการลอง เปรียบเทียบประสิทธิภาพของการเรียงข้อมูลแต่ละแบบ เมื่อใช้กับข้อมูลขนาดเล็ก ขนาดใหญ่ และข้อมูลที่มีความความแตกต่างของข้อมูลน้อย และความแตกต่างของข้อมูลมาก
 
 ```html
-ในการทดลองเปรียบเทียบประสิทธิภาพของอัลกอริทึมการเรียงลำดับ (Sorting Algorithms) สำหรับข้อมูลขนาดเล็กหรือที่มีการจัดเรียงอยู่แล้ว อัลกอริทึมที่มีประสิทธิภาพไม่สูงอาจใช้เวลาน้อยและเหมาะสม เช่น Insertion Sort และ Selection Sort
+ จากการทดลองสรุปผลได้ว่าข้อมูลขนาดเล็กหรือที่มีการจัดเรียงอยู่แล้ว อัลกอริทึมที่มีประสิทธิภาพไม่สูงอาจใช้เวลาน้อยและเหมาะสม เช่น Insertion Sort และ Selection Sort
 สำหรับข้อมูลขนาดใหญ่ที่มีความซับซ้อน Quick Sort, Merge Sort, Radix Sort, และ Counting Sort จะเป็นตัวเลือกที่ดีที่สุดเนื่องจากมีประสิทธิภาพสูงและสามารถรองรับขนาดข้อมูลที่ใหญ่ได้ดี
 ``` 
